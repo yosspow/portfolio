@@ -32,7 +32,7 @@ export default function Header() {
               className="logo-light"
               title
               alt="Logo"
-              src="/images/yssf.svg"
+              src="/images/yssf-sm.png"
               style={{ width: '150px', height: 'auto' }}
             />
           </Link>
@@ -48,7 +48,7 @@ export default function Header() {
               duration={500}
               onClick={() => setMobileToggle(false)}
             >
-              Home
+              Hero
             </ScrollLink>
           </li>
           <li>

@@ -3,21 +3,20 @@
     "imgUrl": "/images/persenal-photo.jpeg",
     "name": "Elhabachi Youssef",
     "heading": "Hi! I’m Youssef",
-    "typingText": ["I'm Full Stack Developer", 1500, "I'm Mern Developer", 1500],
+    "typingText": ["I'm Full Stack Developer", 500],
     "description": "Passionate about crafting clean, efficient, and scalable code. I enjoy diving deep into complex problems and turning ideas into reality. Let's build something awesome together!",
-    "btnText": "Get in touch",
-    "btnUrl": "contactus"
+    "btnText": "Download Cv"
   },
   "socialBtns": [
-    {
-      "icon": "git Hub",
-      "iconBgClass": "github",
-      "href": "https://github.com/yosspow"
-    },
     {
       "icon": "fa-brands:linkedin-in",
       "iconBgClass": "linkedin",
       "href": "https://www.linkedin.com/in/elhabachi-youssef/"
+    },
+    {
+      "icon": "fa-brands:github",
+      "iconBgClass": "github",
+      "href": "https://github.com/yosspow"
     }
   ],
   "about": {
@@ -39,7 +38,7 @@
         "number": "Data Base"
       }
     ],
-    "btnText": "Get in touch",
+    "btnText": "Contact Me",
     "btnUrl": "contactus"
   },
   "projects": {

@@ -1,5 +1,8 @@
 /* Background
 -------------------------------*/
+.github{
+  background-color: rgb(86, 82, 73);
+}
 body {
   background-color: var(--px-bg);
   color: var(--px-text);
@@ -17,9 +20,14 @@ body {
     #050c16 101.48%
   );
 }
-.tswira{
-  max-width: 80%;
+
+
+.hs-banner img {
+  width: 80%; /* Make sure the image fills its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; 
 }
+
 
 a {
   text-decoration: none;

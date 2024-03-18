@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7bd2ff64.css",
+    "main.js": "/static/js/main.b19eb6d6.js",
+    "static/media/elhabachi-youssef.pdf": "/static/media/elhabachi-youssef.ed70a0bb7e117a249719.pdf",
+    "index.html": "/index.html",
+    "main.7bd2ff64.css.map": "/static/css/main.7bd2ff64.css.map",
+    "main.b19eb6d6.js.map": "/static/js/main.b19eb6d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bd2ff64.css",
+    "static/js/main.b19eb6d6.js"
+  ]
+}
