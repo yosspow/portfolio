@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "imgUrl": "/images/persenal-photo.jpeg",
+    "name": "Elhabachi Youssef",
+    "heading": "Hi! I’m Youssef",
+    "typingText": ["I'm Full Stack Developer", 1500, "I'm Mern Developer", 1500],
+    "description": "Passionate about crafting clean, efficient, and scalable code. I enjoy diving deep into complex problems and turning ideas into reality. Let's build something awesome together!",
+    "btnText": "Get in touch",
+    "btnUrl": "contactus"
+  },
+  "socialBtns": [
+    {
+      "icon": "git Hub",
+      "iconBgClass": "github",
+      "href": "https://github.com/yosspow"
+    },
+    {
+      "icon": "fa-brands:linkedin-in",
+      "iconBgClass": "linkedin",
+      "href": "https://www.linkedin.com/in/elhabachi-youssef/"
+    }
+  ],
+  "about": {
+    "imgSrc": "/images/aboutme.jpg",
+    "miniTitle": "About Me",
+    "title": "Hi, I'm a Full Stack Developer",
+    "description": "I specialize in building web applications using the MERN stack: MongoDB, Express.js, React.js, and Node.js. and also other Techs such as PHP, Laravel , I have a passion for creating efficient, scalable, and user-friendly applications.",
+    "funfacts": [
+      {
+        "title": "html / css / bootstrap / javascript / React js",
+        "number": "Front End"
+      },
+      {
+        "title": "Node js / Express js / Php 8 / laravel/",
+        "number": "Back End"
+      },
+      {
+        "title": "MongoDb/ MySQL",
+        "number": "Data Base"
+      }
+    ],
+    "btnText": "Get in touch",
+    "btnUrl": "contactus"
+  },
+  "projects": {
+    "sectionHeading": {
+      "miniTitle": "My Work",
+      "title": "MY PROJECTS"
+    },
+    "allProjects": [
+      {
+        "thumbUrl": "/images/popup-project-1.jpg",
+        "title": "Web site ecommerce cash-on-dilevery",
+        "subTitle": "front office && Back office && Back-end",
+        "details": {
+          "title": "Web site ecommerce cash-on-dilevery",
+          "description": "Develop an online store with a cash-on-delivery payment  option, including product browsing, shopping cart, and order  management, using Laravel 9 and Bootstrap. ",
+          "type": "Website",
+          "langages": "HTML, CSS ,JS,bootstrap 9, PHP, Laravel 9, MySql",
+          "country": "Morocco",
+          "url": "https://github.com/yosspow/cash_on_dilevery"
+        }
+      },
+      {
+        "thumbUrl": "/images/kp-batiment.jpeg",
+        "title": "Real estate selling website",
+        "subTitle": "front office && Back office && Back-end",
+        "details": {
+          "title": "Real estate selling website",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "type": "Website",
+          "langages": "HTML, CSS ,JS,bootstrap 9, PHP, Laravel 9 , MySql",
+          "country": "Morocco",
+          "url": "https://github.com/yosspow/real_estate_selling"
+        }
+      },
+      {
+        "thumbUrl": "/images/github.webp",
+        "title": "Blog Management System",
+        "subTitle": "Back-end development only ",
+        "details": {
+          "title": "Blog Management System",
+          "description": "Build a blogging platform with features like post creation, categorization, tagging, and commenting using Express.js",
+          "type": "Website",
+          "langages": "HTML, CSS, JS, NodeJS, ExpressJS, MongoDB",
+          "country": "Morocco",
+          "url": "https://github.com/yosspow/blog_project_mongoDB"
+        }
+      },
+      {
+        "thumbUrl": "/images/github.webp",
+        "title": "Command Management System",
+        "subTitle": "Back-end && Front-End",
+        "details": {
+          "title": "Command Management System",
+          "description": "Create a system to manage orders efficiently within the company, including tracking and status updates.",
+          "type": "Website",
+          "langages": "HTML, CSS, JS,PHP,laravel 9",
+          "country": "Morocco",
+          "url": "https://github.com/yosspow/commande_systeme"
+        }
+      }
+    
+    ]
+  },
+  "experience": {
+    "sectionHeading": {
+      "miniTitle": "Experience",
+      "title": "My <span>Experience</span>"
+    },
+    "allExperience": [
+      {
+        "designation": "Full Stack MERN Developer",
+        "company": "Ark'x Academy",
+        "duration": "JAN 2024 - PRESENT",
+        "jobType": "Full time",
+        "companyTitle": "Bootcamp",
+        "companyDescription": " I completed an intensive bootcamp focused on Full Stack Web Development, emphasizing the MERN stack (MongoDB, Express.js, React.js, Node.js). Through daily mentorship from senior Tech Leads, I gained hands-on experience, evident in executing various Full Stack projects. Specializing in front-end and back-end development, I excel in crafting seamless UI with React.js and building robust server-side infrastructure with Node.js and Express.js. Proficient in integrating designs for optimal UX, implementing CRUD operations, data validation, and route management. Skilled in MongoDB database management, designing schemas, and optimizing queries for efficiency. My expertise enables me to create dynamic and efficient web applications meeting functional and aesthetic standards."
+      }
+
+    ]
+  },
+  "contact": {
+    "sectionHeading": {
+      "title": "Let’s Discuss Your Project",
+      "subTitle": "Always available for freelancing if the right project comes along, Feel free to contact me."
+    },
+    "contactImg": "/images/persenal-photo.jpeg",
+    "contactInfo": [
+      { "title": "E-mail", "email": "elhabachi.youssef@arkx.academy" },
+      { "title": "Phone Number", "tel": "+212600144354" }
+    ]
+  }
+}
