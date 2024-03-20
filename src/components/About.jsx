@@ -1,7 +1,7 @@
-import { Icon } from '@iconify/react';
-import React from 'react';
-import parser from 'html-react-parser';
-import { Link as ScrollLink } from 'react-scroll';
+import { Icon } from "@iconify/react";
+import React from "react";
+import parser from "html-react-parser";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function About({ data }) {
   const { imgSrc, miniTitle, title, description, funfacts, btnText, btnUrl } =
@@ -35,7 +35,7 @@ export default function About({ data }) {
             data-aos-delay="500"
           >
             <div className="about-banner text-center">
-              <img src={imgSrc} alt="Thumb" className='tswira' />
+              <img src={imgSrc} alt="Thumb" className="about-img" />
             </div>
           </div>
           <div className="col-lg-6 col-xl-5 px-lg-5">
@@ -58,10 +58,7 @@ export default function About({ data }) {
               <div className="review-box">
                 {funfacts?.map((item, index) => (
                   <div className="r-box" key={index}>
-                    <h3>
-                      {item.number}
-                      
-                    </h3>
+                    <h3 style={{ color: "#3ed3ba" }}>{item.number}</h3>
                     <label>{item.title}</label>
                   </div>
                 ))}
@@ -75,7 +72,7 @@ export default function About({ data }) {
                   duration={300}
                   className="px-btn"
                 >
-                  <span>{btnText}</span>{' '}
+                  <span>{btnText}</span>{" "}
                   <i>
                     <Icon icon="bi:arrow-right" />
                   </i>

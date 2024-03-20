@@ -1,7 +1,7 @@
-import React from 'react';
-import SocialBtns from './SocialBtns';
-import ContactInfo from './ContactInfo';
-import ContactForm from './ContactForm';
+import React from "react";
+import SocialBtns from "./SocialBtns";
+import ContactInfo from "./ContactInfo";
+import ContactForm from "./ContactForm";
 
 export default function Contact({ data, socialData }) {
   const { sectionHeading, contactImg, contactInfo } = data;
@@ -12,12 +12,7 @@ export default function Contact({ data, socialData }) {
           <div className="row g-0 p-4 p-lg-5">
             <div className="col-lg-4" />
             <div className="col-lg-8">
-              <div
-                className="contactus-title"
-                data-aos="fade-left"
-                data-aos-duration="1200"
-                data-aos-delay="200"
-              >
+              <div className="contactus-title">
                 <h5>{sectionHeading.title}</h5>
                 <p className="m-0">{sectionHeading.subTitle}</p>
               </div>
@@ -31,7 +26,12 @@ export default function Contact({ data, socialData }) {
             </div>
             <div className="col-lg-4 pe-md-5">
               <div className="contact-banner d-none d-lg-block">
-                <img src={contactImg} title alt="Avatar" />
+                <img
+                  src={contactImg}
+                  title
+                  alt="Avatar"
+                  className="img-contact"
+                />
               </div>
               <ContactInfo contactInfoData={contactInfo} />
               <SocialBtns socialBtns={socialData} />

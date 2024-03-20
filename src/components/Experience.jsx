@@ -1,11 +1,15 @@
-import React from 'react';
-import SectionHeading from './SectionHeading';
+import React from "react";
+import SectionHeading from "./SectionHeading";
 
 export default function Experience({ data }) {
   const { sectionHeading, allExperience } = data;
 
   return (
-    <section id='experience' style={{ marginTop:'40px' }} className="section gray-bg">
+    <section
+      id="experience"
+      style={{ marginTop: "40px" }}
+      className="section gray-bg"
+    >
       <div className="container">
         <SectionHeading
           miniTitle={sectionHeading.miniTitle}
@@ -13,13 +17,7 @@ export default function Experience({ data }) {
         />
         <div className="row gy-3">
           {allExperience?.map((item, index) => (
-            <div
-              className="col-12"
-              key={index}
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay={index * 100}
-            >
+            <div className="col-12" key={index}>
               <div className="ex-box">
                 <div className="row gy-4">
                   <div className="col-md-4 col-lg-3">

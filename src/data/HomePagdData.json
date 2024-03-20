@@ -3,7 +3,7 @@
     "imgUrl": "/images/persenal-photo.jpeg",
     "name": "Elhabachi Youssef",
     "heading": "Hi! I’m Youssef",
-    "typingText": ["I'm Full Stack Developer", 500],
+    "typingText": ["Full Stack Developer", 1500, "Web Developper", 1500],
     "description": "Passionate about crafting clean, efficient, and scalable code. I enjoy diving deep into complex problems and turning ideas into reality. Let's build something awesome together!",
     "btnText": "Download Cv"
   },
@@ -66,15 +66,15 @@
         "subTitle": "front office && Back office && Back-end",
         "details": {
           "title": "Real estate selling website",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "description": "building Real State selling application that includes real estate Management systeme && admin dashboard ",
           "type": "Website",
-          "langages": "HTML, CSS ,JS,bootstrap 9, PHP, Laravel 9 , MySql",
+          "langages": "Blade,CSS ,JS,bootstrap, PHP, Laravel, MySql",
           "country": "Morocco",
           "url": "https://github.com/yosspow/real_estate_selling"
         }
       },
       {
-        "thumbUrl": "/images/github.webp",
+        "thumbUrl": "/images/blog-app.jpg",
         "title": "Blog Management System",
         "subTitle": "Back-end development only ",
         "details": {
@@ -87,7 +87,7 @@
         }
       },
       {
-        "thumbUrl": "/images/github.webp",
+        "thumbUrl": "/images/commande.jpg",
         "title": "Command Management System",
         "subTitle": "Back-end && Front-End",
         "details": {
@@ -99,7 +99,6 @@
           "url": "https://github.com/yosspow/commande_systeme"
         }
       }
-    
     ]
   },
   "experience": {
@@ -116,13 +115,12 @@
         "companyTitle": "Bootcamp",
         "companyDescription": " I completed an intensive bootcamp focused on Full Stack Web Development, emphasizing the MERN stack (MongoDB, Express.js, React.js, Node.js). Through daily mentorship from senior Tech Leads, I gained hands-on experience, evident in executing various Full Stack projects. Specializing in front-end and back-end development, I excel in crafting seamless UI with React.js and building robust server-side infrastructure with Node.js and Express.js. Proficient in integrating designs for optimal UX, implementing CRUD operations, data validation, and route management. Skilled in MongoDB database management, designing schemas, and optimizing queries for efficiency. My expertise enables me to create dynamic and efficient web applications meeting functional and aesthetic standards."
       }
-
     ]
   },
   "contact": {
     "sectionHeading": {
-      "title": "Let’s Discuss Your Project",
-      "subTitle": "Always available for freelancing if the right project comes along, Feel free to contact me."
+      "title": "Contact Me ",
+      "subTitle": "Feel free to contact me."
     },
     "contactImg": "/images/persenal-photo.jpeg",
     "contactInfo": [

@@ -1,44 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   // Handler for input field changes
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setFormData(prevFormData => ({
+    setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
     }));
   };
 
-  const onSubmit = async event => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
     const formData = new FormData(event.target);
 
-    formData.append('access_key', '6d7bc3fc-6190-43c5-8298-89ac5ef7494f');
+    formData.append("access_key", "6d7bc3fc-6190-43c5-8298-89ac5ef7494f");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
+        "Content-Type": "application/json",
+        Accept: "application/json",
       },
       body: json,
-    }).then(res => res.json());
+    }).then((res) => res.json());
 
     if (res.success) {
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ name: "", email: "", subject: "", message: "" });
       setLoading(false);
     }
   };
@@ -104,10 +104,10 @@ export default function ContactForm() {
         <div className="col-md-12">
           <div className="send">
             <button
-              className={`px-btn w-100 ${loading ? 'disabled' : ''}`}
+              className={`px-btn w-100 ${loading ? "disabled" : ""}`}
               type="submit"
             >
-              {loading ? 'Sending...' : 'Send Message'}
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </div>
         </div>

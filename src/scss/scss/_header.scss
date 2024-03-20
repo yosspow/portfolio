@@ -1,4 +1,4 @@
-.logo{
+.logo {
   padding-top: 20px;
 }
 
@@ -20,7 +20,9 @@
     bottom: 0;
     margin: auto;
     width: 17px;
-    box-shadow: 0 0 0 1px currentColor, 0px -7px 0 1px currentColor,
+    box-shadow:
+      0 0 0 1px currentColor,
+      0px -7px 0 1px currentColor,
       0 7px 0 1px currentColor;
     height: 0;
   }
@@ -84,7 +86,7 @@
           color: var(--px-white);
         }
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           left: auto;
           right: 0;

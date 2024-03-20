@@ -1,16 +1,16 @@
-import { Icon } from '@iconify/react';
-import React, { useState } from 'react';
-import SectionHeading from './SectionHeading';
-import Slider from 'react-slick';
-import Modal from './Modal';
+import { Icon } from "@iconify/react";
+import React, { useState } from "react";
+import SectionHeading from "./SectionHeading";
+import Slider from "react-slick";
+import Modal from "./Modal";
 
 export default function Projects({ data }) {
   const [modal, setModal] = useState(false);
-  const [modalType, setModalType] = useState('image');
+  const [modalType, setModalType] = useState("image");
   const [modalData, setModalData] = useState({});
   const { sectionHeading, allProjects } = data;
   const handelProjectDetails = (item, itemType) => {
-    if (itemType === 'image') {
+    if (itemType === "image") {
       setModalData(item);
     } else {
       setModalData(item);
@@ -25,9 +25,9 @@ export default function Projects({ data }) {
     dots: true,
     arrows: false,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
-    speed: 1000,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -36,7 +36,7 @@ export default function Projects({ data }) {
 
   return (
     <>
-      <section className="project-section section gray-bg"  id="project">
+      <section className="project-section section gray-bg" id="project">
         <div className="container">
           <SectionHeading
             miniTitle={sectionHeading.miniTitle}
@@ -50,13 +50,17 @@ export default function Projects({ data }) {
           >
             <Slider {...settings} className="slider-gap-24">
               {allProjects?.map((item, index) => (
-                <div key={index} style={{ width: '416px' }}>
-                  <div className="X">
+                <div key={index} style={{ width: "475px", height: "auto" }}>
+                  <div className="project-box">
                     <div className="project-media">
-                      <img src={item.thumbUrl} style={{ height: '290px' }}  alt="Thumb" />
+                      <img
+                        src={item.thumbUrl}
+                        style={{ width: "100%", height: "290px" }}
+                        alt="Thumb"
+                      />
                       <span
                         className="gallery-link"
-                        onClick={() => handelProjectDetails(item, 'image')}
+                        onClick={() => handelProjectDetails(item, "image")}
                       >
                         <i>
                           <Icon icon="bi:plus" />
@@ -64,14 +68,17 @@ export default function Projects({ data }) {
                       </span>
                     </div>
                     <div className="project-body">
-                      <div className="text"  onClick={() => handelProjectDetails(item, 'details')}>
+                      <div
+                        className="text"
+                        onClick={() => handelProjectDetails(item, "details")}
+                      >
                         <h5>{item.title}</h5>
                         <span>{item.subTitle}</span>
                       </div>
                       <div className="link">
                         <span
                           className="p-link"
-                          onClick={() => handelProjectDetails(item, 'details')}
+                          onClick={() => handelProjectDetails(item, "details")}
                         >
                           <Icon icon="bi:arrow-right" />
                         </span>
@@ -96,7 +103,7 @@ export default function Projects({ data }) {
               >
                 ×
               </button>
-              {modalType === 'image' ? (
+              {modalType === "image" ? (
                 <img src={modalData.thumbUrl} alt="Thumbnail" />
               ) : (
                 <Modal modalData={modalData} />

@@ -1,7 +1,7 @@
-import { Icon } from '@iconify/react';
-import React from 'react';
-import SectionHeading from './SectionHeading';
-import Ratings from './Ratings';
+import { Icon } from "@iconify/react";
+import React from "react";
+import SectionHeading from "./SectionHeading";
+import Ratings from "./Ratings";
 
 export default function Service({ data }) {
   const { sectionHeading, allService } = data;

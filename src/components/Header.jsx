@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Header() {
   const [mobileToggle, setMobileToggle] = useState(false);
@@ -14,16 +14,16 @@ export default function Header() {
         setScrolled(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <div
       className={`header-top-fixed one-page-nav ${
-        mobileToggle ? 'menu-open menu-open-desk' : ''
-      } ${scrolled ? 'fixed-header' : ''}`}
+        mobileToggle ? "menu-open menu-open-desk" : ""
+      } ${scrolled ? "fixed-header" : ""}`}
     >
       <div className="container">
         <div className="logo">
@@ -33,7 +33,7 @@ export default function Header() {
               title
               alt="Logo"
               src="/images/yssf-sm.png"
-              style={{ width: '150px', height: 'auto' }}
+              style={{ width: "150px", height: "auto" }}
             />
           </Link>
         </div>
@@ -102,7 +102,6 @@ export default function Header() {
         </ul>
         {/* Top Menu */}
         <div className="d-flex">
-       
           <button
             className="toggler-menu d-lg-none"
             onClick={() => setMobileToggle(!mobileToggle)}

@@ -1,6 +1,6 @@
-import React from 'react';
-import SectionHeading from './SectionHeading';
-import Slider from 'react-slick';
+import React from "react";
+import SectionHeading from "./SectionHeading";
+import Slider from "react-slick";
 
 export default function Testimonial({ data }) {
   const { sectionHeading, allTestimonial } = data;

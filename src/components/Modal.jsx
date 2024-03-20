@@ -1,10 +1,9 @@
-import React from 'react';
-import parser from 'html-react-parser';
+import React from "react";
+import parser from "html-react-parser";
 
 export default function Modal({ modalData }) {
   const { thumbUrl, details } = modalData;
-  const { title, description, type, langages, country, url } =
-    details;
+  const { title, description, type, langages, country, url } = details;
   return (
     <div className="px-modal">
       <div className="single-project-box">
