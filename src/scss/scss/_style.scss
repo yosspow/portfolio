@@ -22,14 +22,12 @@ body {
 }
 
 .hs-banner img {
-  width: 70%; /* Make sure the image fills its container */
+  width: 120%; /* Make sure the image fills its container */
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%;
   border-left: 60px solid transparent; /* Adjust size for triangle */
   border-right: 300x solid transparent; /* Adjust size for triangle */
   border-bottom: 20px solid #0788ff; /* Adjust size and color for triangle */
-  position: relative;
-  left: 10%;
 }
 
 a {
@@ -37,6 +35,7 @@ a {
 }
 .typingtext {
   height: 20%;
+
 }
 .effect-section {
   position: relative;
@@ -172,8 +171,9 @@ a {
     @include down-md {
       padding-bottom: 50px;
     }
-    h6 {
+   h6 {
       margin: 0 0 10px;
+    
       span {
         background: rgba(var(--px-theme-rgb), 0.2);
         border-radius: 4px;

@@ -12,7 +12,9 @@ export default function Projects({ data }) {
   const handelProjectDetails = (item, itemType) => {
     if (itemType === "image") {
       setModalData(item);
+
     } else {
+
       setModalData(item);
     }
     setModalType(itemType);
@@ -47,7 +49,7 @@ export default function Projects({ data }) {
             data-aos="fade"
             data-aos-duration="1200"
             data-aos-delay="400"
-          >
+          >  
             <Slider {...settings} className="slider-gap-24">
               {allProjects?.map((item, index) => (
                 <div key={index} style={{ width: "475px", height: "auto" }}>
@@ -55,7 +57,7 @@ export default function Projects({ data }) {
                     <div className="project-media">
                       <img
                         src={item.thumbUrl}
-                        style={{ width: "100%", height: "290px" }}
+                        style={{ width:"100%" ,height: "290px" }}
                         alt="Thumb"
                       />
                       <span

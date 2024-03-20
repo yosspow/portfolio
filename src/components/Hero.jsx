@@ -24,24 +24,19 @@ export default function Hero({ data, socialData }) {
     <section className="home-section" id="home" data-scroll-index={0}>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6">
+          <div className="col-lg-8">
             <div className="hs-text-box">
-              <h6 data-aos="fade-up" data-aos-duration="1200">
-                <span>{name}</span>
+              <h6 data-aos="fade-up" data-aos-duration="1200" >
+                <span style={{  fontSize: '25px' }}>{name}</span>
               </h6>
 
-              <h1
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                data-aos-delay="100"
-              >
-                {heading}
-              </h1>
+       
               <h2
                 data-aos="fade-up"
                 data-aos-duration="1200"
                 data-aos-delay="200"
                 className="typingtext"
+                
               >
                 <TypeAnimation
                   sequence={typingText}
@@ -94,7 +89,7 @@ export default function Hero({ data, socialData }) {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-4">
             <div className="hs-banner">
               <img src={imgUrl} className="tswira" title alt="Admin" />
             </div>
