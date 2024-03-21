@@ -24,18 +24,18 @@
     "miniTitle": "About Me",
     "title": "Hi, I'm a Full Stack Developer",
     "description": "I specialize in building web applications using the MERN stack: MongoDB, Express.js, React.js, and Node.js. and also other Techs such as PHP, Laravel , I have a passion for creating efficient, scalable, and user-friendly applications.",
-    "funfacts": [
+    "skills": [
       {
-        "title": "html / css / bootstrap / javascript / React js",
-        "number": "Front End"
+        "languages": ["html ", "css", "bootstrap", "javascript", "ReactJs"],
+        "sect": "Front End"
       },
       {
-        "title": "Node js / Express js / Php 8 / laravel/",
-        "number": "Back End"
+        "languages": ["NodeJs", "Php8", "ExpressJs", "laravel9"],
+        "sect": "Back End"
       },
       {
-        "title": "MongoDb/ MySQL",
-        "number": "Data Base"
+        "languages": ["MongoDb", "MySQL"],
+        "sect": "Data Base"
       }
     ],
     "btnText": "Contact Me",

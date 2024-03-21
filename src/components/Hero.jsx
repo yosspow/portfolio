@@ -26,17 +26,15 @@ export default function Hero({ data, socialData }) {
         <div className="row align-items-center">
           <div className="col-lg-8">
             <div className="hs-text-box">
-              <h6 data-aos="fade-up" data-aos-duration="1200" >
-                <span style={{  fontSize: '25px' }}>{name}</span>
+              <h6 data-aos="fade-up" data-aos-duration="1200">
+                <span style={{ fontSize: "25px" }}>{name}</span>
               </h6>
 
-       
               <h2
                 data-aos="fade-up"
                 data-aos-duration="1200"
                 data-aos-delay="200"
                 className="typingtext"
-                
               >
                 <TypeAnimation
                   sequence={typingText}
@@ -70,14 +68,14 @@ export default function Hero({ data, socialData }) {
                   <i className="d-flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="23"
-                      height="23"
-                      fill="currentColor"
-                      class="bi bi-file-earmark-person"
-                      viewBox="0 0 16 16"
+                      width={24}
+                      height={24}
+                      viewBox="0 0 24 24"
                     >
-                      <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                      <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z" />
+                      <path
+                        fill="currentColor"
+                        d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"
+                      ></path>
                     </svg>
                   </i>
                 </ScrollLink>

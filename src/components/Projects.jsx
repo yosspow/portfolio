@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+
 import React, { useState } from "react";
 import SectionHeading from "./SectionHeading";
 import Slider from "react-slick";
@@ -12,9 +13,7 @@ export default function Projects({ data }) {
   const handelProjectDetails = (item, itemType) => {
     if (itemType === "image") {
       setModalData(item);
-
     } else {
-
       setModalData(item);
     }
     setModalType(itemType);
@@ -49,7 +48,7 @@ export default function Projects({ data }) {
             data-aos="fade"
             data-aos-duration="1200"
             data-aos-delay="400"
-          >  
+          >
             <Slider {...settings} className="slider-gap-24">
               {allProjects?.map((item, index) => (
                 <div key={index} style={{ width: "475px", height: "auto" }}>
@@ -57,7 +56,7 @@ export default function Projects({ data }) {
                     <div className="project-media">
                       <img
                         src={item.thumbUrl}
-                        style={{ width:"100%" ,height: "290px" }}
+                        style={{ width: "100%", height: "290px" }}
                         alt="Thumb"
                       />
                       <span
@@ -65,7 +64,17 @@ export default function Projects({ data }) {
                         onClick={() => handelProjectDetails(item, "image")}
                       >
                         <i>
-                          <Icon icon="bi:plus" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1em"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M3 21v-6h2v2.6l3.1-3.1l1.4 1.4L6.4 19H9v2zm12 0v-2h2.6l-3.1-3.1l1.4-1.4l3.1 3.1V15h2v6zM8.1 9.5L5 6.4V9H3V3h6v2H6.4l3.1 3.1zm7.8 0l-1.4-1.4L17.6 5H15V3h6v6h-2V6.4z"
+                            ></path>
+                          </svg>
                         </i>
                       </span>
                     </div>
@@ -106,7 +115,11 @@ export default function Projects({ data }) {
                 ×
               </button>
               {modalType === "image" ? (
-                <img src={modalData.thumbUrl} alt="Thumbnail" />
+                <img
+                  src={modalData.thumbUrl}
+                  className="zomImage"
+                  alt="Thumbnail"
+                />
               ) : (
                 <Modal modalData={modalData} />
               )}

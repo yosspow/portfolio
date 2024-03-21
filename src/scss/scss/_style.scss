@@ -1,8 +1,6 @@
 /* Background
 -------------------------------*/
-.github {
-  background-color: rgb(86, 82, 73);
-}
+
 body {
   background-color: var(--px-bg);
   color: var(--px-text);
@@ -35,7 +33,6 @@ a {
 }
 .typingtext {
   height: 20%;
-
 }
 .effect-section {
   position: relative;
@@ -171,19 +168,19 @@ a {
     @include down-md {
       padding-bottom: 50px;
     }
-   h6 {
+    h6 {
       margin: 0 0 10px;
-    
+
       span {
         background: rgba(var(--px-theme-rgb), 0.2);
         border-radius: 4px;
         padding: 5px 12px;
         display: inline-block;
         color: var(--px-white);
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
         line-height: 20px;
-        letter-spacing: 4px;
+        letter-spacing: 5px;
         text-transform: uppercase;
       }
     }
@@ -236,6 +233,16 @@ a {
 /* ----------------------
 *   About
 ---------------------------*/
+.languages {
+  background: #28b3a0;
+  border-radius: 4px;
+  margin: 13px 2px;
+  padding: 3px;
+  color: var(--px-white);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 .about-banner {
   position: relative;
   right: 70px;
@@ -298,7 +305,6 @@ a {
       }
       label {
         font-size: 14px;
-        line-height: 130%;
         color: #ffffff;
         margin-top: auto; /* Push title to the bottom */
       }
@@ -312,6 +318,10 @@ a {
 /* ----------------------
 *   Projects
 ---------------------------*/
+.zomImage {
+  width: 100%;
+  position: relative;
+}
 .project-section {
   overflow: hidden;
 
@@ -648,6 +658,7 @@ a {
 /* ----------------------
 *   Modal
 ---------------------------*/
+
 .mfp-wrap {
   top: 0;
   left: 0;
@@ -663,20 +674,21 @@ a {
   text-align: center;
   position: absolute;
   width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+  height: auto;
+
   padding: 30px 15px;
   box-sizing: border-box;
   &:before {
     content: "";
+
     display: inline-block;
-    height: 100%;
+    height: auto;
     vertical-align: middle;
   }
 }
 .mfp-content {
   cursor: auto;
+  width: 70%;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -684,10 +696,14 @@ a {
   text-align: left;
   z-index: 1045;
 }
+.mfp-close {
+  color: #0e8da7;
+}
 .mfp-bg {
   background: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+
+  -webkit-backdrop-filter: saturate(100%) blur(20px);
+  backdrop-filter: saturate(100%) blur(2px);
   position: fixed;
   left: 0;
   top: 0;

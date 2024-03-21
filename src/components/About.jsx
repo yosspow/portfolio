@@ -4,8 +4,9 @@ import parser from "html-react-parser";
 import { Link as ScrollLink } from "react-scroll";
 
 export default function About({ data }) {
-  const { imgSrc, miniTitle, title, description, funfacts, btnText, btnUrl } =
+  const { imgSrc, miniTitle, title, description, skills, btnText, btnUrl } =
     data;
+  console.log(skills[0].languages);
   return (
     <section className="about-section section" id="about">
       <div className="container">
@@ -51,15 +52,19 @@ export default function About({ data }) {
                     <span>{miniTitle}</span>
                   </h6>
                 )}
-
-                {title && <h2>{parser(title)}</h2>}
               </div>
               <p>{description}</p>
               <div className="review-box">
-                {funfacts?.map((item, index) => (
+                {skills?.map((item, index) => (
                   <div className="r-box" key={index}>
-                    <h3 style={{ color: "#3ed3ba" }}>{item.number}</h3>
-                    <label>{item.title}</label>
+                    <h3 style={{ color: "#3ed3ba" }}>{item.sect}</h3>
+                    <label>
+                      {item.languages.map((lang, indexLang) => (
+                        <span key={indexLang} className="languages">
+                          {lang}{" "}
+                        </span>
+                      ))}
+                    </label>
                   </div>
                 ))}
               </div>
@@ -82,6 +87,7 @@ export default function About({ data }) {
           </div>
         </div>
       </div>
+      fun
     </section>
   );
 }

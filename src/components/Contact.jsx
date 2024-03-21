@@ -10,7 +10,6 @@ export default function Contact({ data, socialData }) {
       <div className="container">
         <div className="contactus-box rounded oveflow-hidden gray-bg">
           <div className="row g-0 p-4 p-lg-5">
-            <div className="col-lg-4" />
             <div className="col-lg-8">
               <div className="contactus-title">
                 <h5>{sectionHeading.title}</h5>
@@ -25,14 +24,6 @@ export default function Contact({ data, socialData }) {
               </div>
             </div>
             <div className="col-lg-4 pe-md-5">
-              <div className="contact-banner d-none d-lg-block">
-                <img
-                  src={contactImg}
-                  title
-                  alt="Avatar"
-                  className="img-contact"
-                />
-              </div>
               <ContactInfo contactInfoData={contactInfo} />
               <SocialBtns socialBtns={socialData} />
             </div>

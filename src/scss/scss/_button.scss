@@ -69,14 +69,17 @@
     &:hover {
       top: -2px;
     }
-    &.dribbble {
-      background: #f26798;
-    }
-    &.facebook {
-      background: #1877f2;
-    }
     &.linkedin {
-      background: #1275b1;
+      background: var(--px-bg);
+      &:hover {
+        background-color: #1275b1;
+      }
+    }
+    &.github {
+      background-color: var(--px-bg);
+      &:hover {
+        background-color: #1a242b;
+      }
     }
   }
 }
